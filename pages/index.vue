@@ -34,6 +34,20 @@
         <button>Submit</button>
       </form>
     </div>
+
+    <h2>HTML Forms</h2>
+    <form
+      name="name-form"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <label for="fname">First name:</label><br />
+      <input id="fname" type="text" name="fname" value="John" /><br />
+      <label for="lname">Last name:</label><br />
+      <input id="lname" type="text" name="lname" value="Doe" /><br /><br />
+      <button>Submit</button>
+    </form>
   </div>
 </template>
 
@@ -67,33 +81,6 @@ export default {
 
 <style>
 .container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+  padding: 10px;
 }
 </style>
